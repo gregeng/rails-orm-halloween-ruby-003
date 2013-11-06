@@ -18,6 +18,7 @@
       ],
       "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/bucket.rb": [
         1,
+        1,
         null
       ],
       "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/candy.rb": [
@@ -30,9 +31,10 @@
       ],
       "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/kid.rb": [
         1,
+        1,
         null
       ]
     },
-    "timestamp": 1383771234
+    "timestamp": 1383771765
   }
 }

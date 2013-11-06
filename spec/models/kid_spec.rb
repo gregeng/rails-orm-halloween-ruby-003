@@ -12,7 +12,7 @@ describe Kid do
   it "has an age" do
     kid.age = 14
     kid.save
-    k = Kid.find(:id => kid.id)
+    k = Kid.find(kid.id)
     k.age.should eq(kid.age)
   end
 
