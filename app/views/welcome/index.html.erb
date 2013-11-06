@@ -1,0 +1,9 @@
+<h1> Welcome to Halloween, the greatest holiday!</h1>
+
+<%= form_for(@kid) do |f| %>
+  <%= f.label "Name" %>
+  <%= f.text_field :name %></br>
+  <%= f.label "Age" %>
+  <%= f.number_field :age, in: 0..30 %></br>
+  <%= f.submit "Start Trick Or Treatin'" %>
+<% end %>
