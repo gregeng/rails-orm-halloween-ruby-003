@@ -1,7 +1,15 @@
 require 'spec_helper'
 
 describe Bucket do
-  it "belongs to a kid"
+  it "belongs to a kid" do
+    kid = Kid.create(:name => "Greg")
+    pumpkin_bucket = Bucket.create
+    kid.bucket = pumpkin_bucket
+
+    expect(Bucket.first).to eq(kid.bucket)
+    expect(kid.bucket.nil?).to eq(false)
+  end
+
 
   it "can contain candy" do
     pending
