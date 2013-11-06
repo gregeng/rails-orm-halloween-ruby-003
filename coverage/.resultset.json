@@ -1,17 +1,59 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/kid.rb": [
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/controllers/houses_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/controllers/welcome_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/bucket_candy.rb": [
         1,
         1,
+        1,
+        null,
         null
       ],
       "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/bucket.rb": [
         1,
         1,
         null
+      ],
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/candy.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/house_candy.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/house.rb": [
+        1,
+        null
+      ],
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/kid.rb": [
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1383774039
+    "timestamp": 1383776356
   }
 }
