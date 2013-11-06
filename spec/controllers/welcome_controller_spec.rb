@@ -8,6 +8,8 @@ describe WelcomeController do
     # you'll need to use a form, post to a route
     # and use sessions here to keep track of the visitor
     # and their bucket
+
+    # once it does that, it will save the user then set the session for that user
   end
 
   # BONUS:

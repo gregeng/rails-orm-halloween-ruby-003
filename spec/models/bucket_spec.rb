@@ -10,7 +10,6 @@ describe Bucket do
     expect(kid.bucket.nil?).to eq(false)
   end
 
-
   it "can contain candy" do
     pending
     # think of how you'll implement this. You won't directly relate bucket to candy (join table),
