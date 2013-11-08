@@ -1,7 +1,8 @@
 class KidsController < ApplicationController
 
   def create
-    k = Kid.find_or_create_by(kid_params)
+    # raise params.inspect
+    k = Kid.find_or_create_by(:name => params[:kid][:name])
     k.bucket = Bucket.new
     k.save
     session[:user_id] = k.id

@@ -38,7 +38,7 @@ class HousesController < ApplicationController
     @house.name = params[:house][:name]
     @house.candies = candy_objects
     @house.save
-    redirect_to(houses_path)
+    redirect_to(house_path(@house))
   end
 
 
