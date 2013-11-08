@@ -1,9 +1,9 @@
 <h3><%= @house.name %></h3>
 
-<!-- <ul>
-<%# @house.candies.each do |candy| %>
-<li><%#= candy.name %></li>
-<%# end %>
+<ul>
+<% @house.candies.each do |candy| %>
+<li><%= candy.name %></li>
+<% end %>
 </ul>
- -->
+
 <%= link_to "Tired of Hi-Chews? Run to the store and get something else.", edit_house_path(@house) %>

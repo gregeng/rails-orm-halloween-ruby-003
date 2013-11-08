@@ -1,13 +1,13 @@
-<h3> Edit the House! </h3>
+<h3> Change your decorations, or your candy: </h3>
 <%= form_for @house do |f| %>
 <%= f.text_field :name %>
-<!-- <ul>
+<ul>
   <h4>Candies that this house gives out:</h4>
-  <%# @candies.each do |candy| %>
-        <%#= label_tag candy.name %>
-        <%#= check_box_tag 'candies[]', candy.id,  @house.candies.include?(candy), :id => candy.name %>
+  <% @candies.each do |candy| %>
+        <%= label_tag candy.name %>
+        <%= check_box_tag 'candies[]', candy.id,  @house.candies.include?(candy), :id => candy.name %>
         <br>
-  <%# end %>
-</ul> -->
+  <% end %>
+</ul>
 <%= f.submit %>
 <% end %>

@@ -11,21 +11,36 @@ class HousesController < ApplicationController
 
   def new
     @house = House.new
+    @candies = Candy.all
   end
 
   def edit
     @house = House.find(params[:id])
+    @candies = Candy.all
   end
 
   def create
-    @house = House.new(house_params)
+    candy_ids = params[:candies]
+    candy_objects = Candy.find_candies(candy_ids)
 
-    if @house.save
-      redirect_to houses_path
-    else
-      render action: 'new'
-    end
+    @house = House.new
+    @house.name = params[:recipe][:name]
+    @house.candies = candy_objects
+    @recipe.save
+    redirect_to(houses_path)
   end
+
+  def update
+    candy_ids = params[:candies]
+    candy_objects = Candy.find_candies(candy_ids)
+
+    @house = House.find(params[:id])
+    @house.name = params[:recipe][:name]
+    @house.candies = candy_objects
+    @recipe.save
+    redirect_to(houses_path)
+  end
+
 
   def destroy
     @house.destroy
