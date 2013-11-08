@@ -1,7 +1,9 @@
 class KidsController < ApplicationController
 
   def create
-    k = Kid.create(kid_params)
+    k = Kid.find_or_create_by(kid_params)
+    k.bucket = Bucket.new
+    k.save
     session[:user_id] = k.id
     redirect_to(houses_path)
   end

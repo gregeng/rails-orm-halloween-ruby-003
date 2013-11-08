@@ -1,17 +1,28 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/bucket.rb": [
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/controllers/welcome_controller.rb": [
         1,
+        null,
         1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
         null
       ],
-      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/models/kid.rb": [
+      "/Users/GregEng/Development/code/flatiron/labs-rails/rails-orm-halloween-ruby-003/app/controllers/application_controller.rb": [
         1,
+        null,
+        null,
         1,
         null
       ]
     },
-    "timestamp": 1383776645
+    "timestamp": 1383927027
   }
 }

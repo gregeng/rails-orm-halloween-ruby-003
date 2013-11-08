@@ -1,8 +1,19 @@
- <h2> Welcome, <%= @kid.name.titleize %>, you are <%= @kid.age %> years old, that means you can trick or treat! </h2>
+ <h2><%= @kid.name.titleize %>! Welcome to Elm Street</h2>
+ <h3> Enjoy Trick or Treatin'</h3><br><br>
 
-<h3> Take your pick of these fine houses: </h3>
+<h4> Take your pick of these fine houses: </h4>
 
-    Haunted House <br>
-    Spooky House <br>
-    Gloomy House <br>
-    Big-Candy House <br>
+<ul>
+<% @houses.each do |house| %>
+<li>
+  <ul>
+<%= link_to house.name, house %>
+    <em><div> << Trick or Treat! >></div>
+  </ul>
+</li>
+<br>
+<% end %>
+</ul>
+
+
+<%= link_to "Visited all the Houses? Add another!", new_house_path %>
