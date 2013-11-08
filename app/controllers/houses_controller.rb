@@ -24,9 +24,9 @@ class HousesController < ApplicationController
     candy_objects = Candy.find_candies(candy_ids)
 
     @house = House.new
-    @house.name = params[:recipe][:name]
+    @house.name = params[:house][:name]
     @house.candies = candy_objects
-    @recipe.save
+    @house.save
     redirect_to(houses_path)
   end
 
@@ -35,9 +35,9 @@ class HousesController < ApplicationController
     candy_objects = Candy.find_candies(candy_ids)
 
     @house = House.find(params[:id])
-    @house.name = params[:recipe][:name]
+    @house.name = params[:house][:name]
     @house.candies = candy_objects
-    @recipe.save
+    @house.save
     redirect_to(houses_path)
   end
 
