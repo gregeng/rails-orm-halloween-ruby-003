@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131108165844) do
+ActiveRecord::Schema.define(version: 20131108182120) do
 
   create_table "bucket_candies", force: true do |t|
     t.integer  "bucket_id"
@@ -34,16 +34,17 @@ ActiveRecord::Schema.define(version: 20131108165844) do
   create_table "candies", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   create_table "house_candies", force: true do |t|
-    t.integer  "bucket_id"
+    t.integer  "candy_id"
     t.integer  "house_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "house_candies", ["bucket_id"], name: "index_house_candies_on_bucket_id"
+  add_index "house_candies", ["candy_id"], name: "index_house_candies_on_candy_id"
   add_index "house_candies", ["house_id"], name: "index_house_candies_on_house_id"
 
   create_table "houses", force: true do |t|
