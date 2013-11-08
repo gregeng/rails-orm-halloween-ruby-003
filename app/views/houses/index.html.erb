@@ -1,7 +1,13 @@
  <h2><%= @kid.name.titleize %>! Welcome to Elm Street</h2>
- <h3> Enjoy Trick or Treatin'</h3><br><br>
+ <h3> Enjoy Trick or Treatin'</h3><br>
+
+
+ <%= link_to "Check out yer haul", bucket_path(@kid.bucket) %><br>
+ <br>
+
 
 <h4> Take your pick of these fine houses: </h4>
+
 
 <ul>
 <% @houses.each do |house| %>
@@ -12,10 +18,11 @@
     <%= form_tag("/buckets/#{@kid.bucket.id}", method: :put) %>
     <%= hidden_field_tag 'house_id', house.id %>
     <%= submit_tag "Trick or Treat!" %>
+    </form>
   </div>
 </li>
 <br>
 <% end %>
 </ul>
 
-<%= link_to "Visited all the Houses? Add another!", new_house_path %>
+<%= link_to "Visited all the Houses? Add another!", new_house_path %><br>

@@ -2,7 +2,7 @@
 <%= form_for @house do |f| %>
 <%= f.text_field :name %>
 <ul>
-  <h4>Candies that this house gives out:</h4>
+  <h4>Just don't give out pretzels...</h4>
   <% @candies.each do |candy| %>
         <%= label_tag candy.name %>
         <%= check_box_tag 'candies[]', candy.id,  @house.candies.include?(candy), :id => candy.name %>
